@@ -1,0 +1,43 @@
+{
+  "minecraft": {
+    "host": "arbuz-qZiu.aternos.me",
+    "port": 48539,
+    "version": "1.21.4",
+    "username": "p4pan2",
+    "auth": "offline",
+    "auto_connect_on_start": false
+  },
+  "behavior": {
+    "use_random_walk": true,
+    "use_routes": false,
+    "loop_routes": false,
+    "return_home_after_route": false,
+    "auto_reconnect": true,
+    "max_reconnect_attempts": 3,
+    "reconnect_base_delay_sec": 3,
+    "show_track": true
+  },
+  "messages": {
+    "enabled": true,
+    "min_interval_sec": 60,
+    "max_interval_sec": 180,
+    "use_random_interval": true
+  },
+  "safety": {
+    "min_health": 6,
+    "min_food": 6,
+    "critical_action": "none"
+  },
+  "auto_eat": {
+    "enabled": true,
+    "threshold": 17
+  },
+  "ui": {
+    "last_tab": 0,
+    "window_geometry": "AdnQywADAAAAAAAA////+AAAB38AAAQHAAABQAAAACAAAAY/AAAEBgAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQH",
+    "theme": "dark_blue",
+    "custom_bg": null,
+    "language": "ru"
+  },
+  "show_track": true
+}

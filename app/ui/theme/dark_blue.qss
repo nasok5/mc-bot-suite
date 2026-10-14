@@ -1,0 +1,318 @@
+/* ====== Базовые цвета ======
+   Фон:        #0d1b2a
+   Панель:     #1b263b
+   Панель+:    #23395d
+   Акцент:     #4a90e2
+   Акцент ховер:#6aa8f0
+   Текст:      #e0e6ed
+   Приглушённый:#8fa3bf
+   Успех:      #2ecc71
+   Внимание:   #f1c40f
+   Ошибка:     #e74c3c
+*/
+
+QWidget {
+    background-color: #0d1b2a;
+    color: #e0e6ed;
+    font-family: "Segoe UI", "Inter", sans-serif;
+    font-size: 10pt;
+}
+
+QMainWindow, QDialog {
+    background-color: #0d1b2a;
+}
+
+/* ====== Вкладки ====== */
+QTabWidget::pane {
+    border: 1px solid #1b263b;
+    background: #1b263b;
+    border-radius: 6px;
+}
+
+QTabBar::tab {
+    background: #0d1b2a;
+    color: #8fa3bf;
+    padding: 8px 18px;
+    margin-right: 2px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab:selected {
+    background: #1b263b;
+    color: #e0e6ed;
+    border-bottom: 2px solid #4a90e2;
+}
+
+QTabBar::tab:hover {
+    color: #e0e6ed;
+}
+
+/* ====== Кнопки ====== */
+QPushButton {
+    background-color: #23395d;
+    color: #e0e6ed;
+    border: 1px solid #2f4f7f;
+    border-radius: 6px;
+    padding: 8px 16px;
+    min-height: 22px;
+}
+
+QPushButton:hover {
+    background-color: #2f4f7f;
+    border-color: #4a90e2;
+}
+
+QPushButton:pressed {
+    background-color: #1b263b;
+}
+
+QPushButton:disabled {
+    background-color: #14243a;
+    color: #4f6480;
+    border-color: #1b263b;
+}
+
+QPushButton#primary {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: 1px solid #4a90e2;
+    border-radius: 4px;
+    padding: 6px 14px;
+}
+
+QPushButton#primary:hover {
+    background-color: #6aa8f0;
+    border-color: #6aa8f0;
+}
+
+QPushButton#primary:pressed {
+    background-color: #3a70b2;
+    border-color: #3a70b2;
+}
+
+QPushButton#primary:disabled {
+    background-color: #2a3f5f;
+    color: #6a7f9f;
+    border-color: #2f4f7f;
+}
+
+
+
+QPushButton#danger {
+    background-color: #7a2323;
+    color: #ffffff;
+    border: 1px solid #a03030;
+    border-radius: 4px;
+    padding: 6px 14px;
+}
+
+QPushButton#danger:hover {
+    background-color: #a03030;
+}
+
+QPushButton#danger:pressed {
+    background-color: #5a1818;
+}
+
+QPushButton#danger:disabled {
+    background-color: #3a1a1a;
+    color: #6a5a5a;
+    border-color: #4a2a2a;
+}
+
+/* ====== Поля ввода ====== */
+QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox, QPlainTextEdit, QTextEdit {
+    background-color: #14243a;
+    color: #e0e6ed;
+    border: 1px solid #2f4f7f;
+    border-radius: 6px;
+    padding: 6px 8px;
+    selection-background-color: #4a90e2;
+}
+
+QLineEdit:focus, QSpinBox:focus, QComboBox:focus,
+QPlainTextEdit:focus, QTextEdit:focus {
+    border-color: #4a90e2;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+
+QComboBox QAbstractItemView {
+    background: #1b263b;
+    color: #e0e6ed;
+    selection-background-color: #4a90e2;
+    border: 1px solid #2f4f7f;
+}
+
+/* ====== Списки ====== */
+QListWidget, QTreeWidget, QTableWidget {
+    background-color: #14243a;
+    border: 1px solid #2f4f7f;
+    border-radius: 6px;
+    color: #e0e6ed;
+    gridline-color: #1b263b;
+}
+
+QListWidget::item:selected, QTreeWidget::item:selected,
+QTableWidget::item:selected {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #1b263b;
+    color: #8fa3bf;
+    border: none;
+    padding: 6px;
+}
+
+/* ====== Скроллбары ====== */
+QScrollBar:vertical {
+    background: #0d1b2a;
+    width: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #2f4f7f;
+    border-radius: 5px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #4a90e2;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: #0d1b2a;
+    height: 10px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #2f4f7f;
+    border-radius: 5px;
+    min-width: 24px;
+}
+
+/* ====== Группы ====== */
+QGroupBox {
+    background-color: #1b263b;
+    border: 1px solid #2f4f7f;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 6px;
+    color: #8fa3bf;
+}
+
+/* ====== Метки статусов ====== */
+QLabel#statusCard {
+    background-color: #1b263b;
+    border: 1px solid #2f4f7f;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 11pt;
+}
+
+QLabel#value {
+    color: #4a90e2;
+    font-weight: 600;
+    font-size: 12pt;
+}
+
+QLabel#success { color: #2ecc71; }
+QLabel#warning { color: #f1c40f; }
+QLabel#error   { color: #e74c3c; }
+QLabel#muted   { color: #8fa3bf; }
+
+/* ====== Прогресс-бары ====== */
+QProgressBar {
+    background-color: #14243a;
+    border: 1px solid #2f4f7f;
+    border-radius: 6px;
+    text-align: center;
+    color: #e0e6ed;
+    height: 18px;
+}
+
+QProgressBar::chunk {
+    background-color: #4a90e2;
+    border-radius: 5px;
+}
+
+QProgressBar#health::chunk { background-color: #e74c3c; }
+QProgressBar#food::chunk   { background-color: #f1c40f; }
+
+/* ====== Статус-бар ====== */
+QStatusBar {
+    background: #1b263b;
+    color: #8fa3bf;
+    border-top: 1px solid #2f4f7f;
+}
+
+/* ====== Меню ====== */
+QMenuBar {
+    background: #0d1b2a;
+    color: #e0e6ed;
+}
+
+QMenuBar::item:selected { background: #1b263b; }
+
+QMenu {
+    background: #1b263b;
+    color: #e0e6ed;
+    border: 1px solid #2f4f7f;
+}
+
+QMenu::item:selected { background: #4a90e2; }
+
+/* ====== Тултипы ====== */
+QToolTip {
+    background: #1b263b;
+    color: #e0e6ed;
+    border: 1px solid #4a90e2;
+    padding: 4px;
+}
+/* ====== Критические состояния ====== */
+QLabel#critical {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+QLabel#warningText {
+    color: #f1c40f;
+    font-weight: 600;
+}
+
+QProgressBar#healthCritical::chunk {
+    background-color: #e74c3c;
+}
+
+QProgressBar#foodCritical::chunk {
+    background-color: #e74c3c;
+}
+
+QGroupBox#warningBox {
+    border: 2px solid #f1c40f;
+    background-color: #2a2a1a;
+}
+/* ====== Мини-карта ====== */
+QWidget#minimap {
+    background-color: #0d1b2a;
+    border: 1px solid #2f4f7f;
+    border-radius: 8px;
+}
